@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Formatter;
 
 public class ConsoleExercises {
     public static void main(String[] args) {
@@ -14,7 +15,7 @@ public class ConsoleExercises {
 //        int userNum = myScanner.nextInt();
 //
 //        System.out.println("You entered: " + userNum);
-//        System.out.print("Enter three seperte words:");
+//        System.out.print("Enter three separate words:");
 //
 //        String firstStr = myScanner.next();
 //        String secondStr = myScanner.next();
@@ -22,18 +23,24 @@ public class ConsoleExercises {
 
 //        System.out.println("Your first word was: " + firstStr + ". Your second word was: " + secondStr + ". Your third word was:" + thirdStr);
         Scanner myScanner = new Scanner(System.in);
+        myScanner.useDelimiter("\n");
+
+        Formatter myFormatter = new Formatter(System.out);
 //        System.out.println("Enter a full sentence: ");
 //        String userInputSentence = myScanner.nextLine();
 //
 //        System.out.print("Your sentence was: " + userInputSentence);
 
-        System.out.println("Enter a length");
-        int length = Integer.parseInt(myScanner.nextLine());
-        System.out.println("Enter a height");
-        int width = Integer.parseInt(myScanner.nextLine());
-        int area = length * width;
-        int perimeter = (2 * length) + (2 * width);
-        System.out.println("The area of the classroom is: " + area + "\n" + "The perimeter of the classroom is: " + perimeter);
+        System.out.println("Enter a length:");
+        float length = myScanner.nextFloat();
+        System.out.println("Enter a width:");
+        float width = myScanner.nextFloat();
+        System.out.println("Enter a height:");
+        float height = myScanner.nextFloat();
+        float area = length * width;
+        float volume = length * width * height;
+        float perimeter = (2 * length) + (2 * width);
+        System.out.printf("\n" + "The area of the classroom is: %.2f \n The perimeter of the classroom is: %.2f \n The volume of the classroom is: %.2f", area, perimeter, volume);
 
     }
 }
