@@ -28,18 +28,17 @@ public class ControlFlowExercises {
 //            System.out.println(count);
 //        } while (count <= 1000000);
 //
-//        int i = 100;
+//        int i = 0;
 //
-//        while (i > 1) {
-//            i--;
-//            if (i % 3 == 0 && i % 5 == 0) {
-//                System.out.println("FizzBuzz" + i);
+//        while (i < 100) {
+//            i++;
+//            if (i % 15 == 0) {
+//                System.out.printf("%s %d\n", "FizzBuzz", i);
 //            } else if (i % 3 == 0) {
-//                System.out.println("Fizz" + i);
+//                System.out.printf("%s %d\n", "Fizz", i);
 //            } else if (i % 5 == 0) {
-//                System.out.println("Buzz" + i);
-//
-//            }
+//                System.out.printf("%s %d\n", "Buzz", i);
+//            } else System.out.printf("%d\n", i);
 //
 //        }
 
@@ -61,37 +60,37 @@ public class ControlFlowExercises {
 //            while (count <= userNum) {
 //                int square = count * count;
 //                int cubed = count * count * count;
-//                System.out.printf("%d\t\t| %d\t\t\t |%d\t\t\t\t\n", count, square, cubed);
+//                System.out.printf("%d\t\t| %d\t\t\t|%d\t\t\t\n", count, square, cubed);
 //                count++;
 //            }
 //        }
 
+//
+//        System.out.println("What was your test score?");
+//        int userNumGrade = scanner.nextInt();
+//        System.out.println("Do you wish to continue? [y/n]");
+//        String userAwns = scanner.next();
+//        boolean userConfirm = userAwns.equalsIgnoreCase("y");
+//        char userFinalGrade;
 
-        System.out.println("What was your test score?");
-        int userNumGrade = scanner.nextInt();
-        System.out.println("Do you wish to continue? [y/n]");
-        String userAwns = scanner.next();
-        boolean userConfirm = userAwns.equalsIgnoreCase("y");
-        char userFinalGrade;
-
-        if (userConfirm) {
-
-            if (userNumGrade >= 88) {
-                userFinalGrade = 'A';
-            } else if (userNumGrade >= 80) {
-                userFinalGrade = 'B';
-            } else if (userNumGrade >= 67) {
-                userFinalGrade = 'C';
-            } else if (userNumGrade >= 60) {
-                userFinalGrade = 'D';
-            } else {
-                userFinalGrade = 'F';
-            }
-
-            System.out.printf("Your grade is: %c\n", userFinalGrade);
-        } else {
-            System.out.println("Goodbye!");
-        }
+//        if (userConfirm) {
+//
+//            if (userNumGrade >= 88) {
+//                userFinalGrade = 'A';
+//            } else if (userNumGrade >= 80) {
+//                userFinalGrade = 'B';
+//            } else if (userNumGrade >= 67) {
+//                userFinalGrade = 'C';
+//            } else if (userNumGrade >= 60) {
+//                userFinalGrade = 'D';
+//            } else {
+//                userFinalGrade = 'F';
+//            }
+//
+//            System.out.printf("Your grade is: %c\n", userFinalGrade);
+//        } else {
+//            System.out.println("Goodbye!");
+//        }
 
 
 
