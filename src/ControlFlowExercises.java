@@ -44,26 +44,26 @@ public class ControlFlowExercises {
 
         Scanner scanner = new Scanner(System.in);
 
-//        System.out.println("Enter an integer:");
-//        int userNum = scanner.nextInt();
-//        System.out.println("Would you like to continue? [y/n]");
-//        String userAnswer = scanner.next();
-//        boolean userContinue = userAnswer.equalsIgnoreCase("y");
-//
-//        if (userContinue) {
-//            System.out.println("Here is your table!");
-//            System.out.println("number\t|\tsquared\t|\tcubed");
-//            System.out.println("------\t|\t------\t|\t------");
-//
-//
-//            int count = 1;
-//            while (count <= userNum) {
-//                int square = count * count;
-//                int cubed = count * count * count;
-//                System.out.printf("%d\t\t| %d\t\t\t|%d\t\t\t\n", count, square, cubed);
-//                count++;
-//            }
-//        }
+        System.out.println("Enter an integer:");
+        int userNum = scanner.nextInt();
+        System.out.println("Would you like to continue? [y/n]");
+        String userAnswer = scanner.next();
+        boolean userContinue = userAnswer.equalsIgnoreCase("y");
+
+        if (userContinue) {
+            System.out.println("Here is your table!");
+            System.out.println("number  | squared  |  cubed");
+            System.out.println("------  |  ------  |  ------");
+
+
+            int count = 1;
+            while (count <= userNum) {
+                int square = count * count;
+                int cubed = count * count * count;
+                System.out.printf("%8d| %9d|%7d\n", count, square, cubed);
+                count++;
+            }
+        }
 
 //
 //        System.out.println("What was your test score?");
