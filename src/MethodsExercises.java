@@ -105,6 +105,7 @@ public class MethodsExercises {
         if (userAnswer.equalsIgnoreCase("y")) {
             confirmRoll = true;
         } else {
+            System.out.println("Thanks for playing!");
             confirmRoll = false;
         }
         return confirmRoll;
