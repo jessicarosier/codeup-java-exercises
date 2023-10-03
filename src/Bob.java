@@ -21,15 +21,16 @@ public class Bob {
                 } else if (userInput.equals("")) {
                     System.out.println("Fine, be that way!");
                 } else {
-                    System.out.println("Whatever");
+                    System.out.println("Whatever.");
                 }
 
             if(userInput.toLowerCase().equalsIgnoreCase("goodbye")) {
                 System.out.println("Thanks for talking to Bob! Goodbye!");
                 talkToBob=false;
             }
-
         }
+
+
 
 
     }
