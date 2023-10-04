@@ -6,6 +6,8 @@ import java.util.Scanner;
 //        If user's guess is less than the number, it outputs "HIGHER".
 //        If user's guess is more than the number, it outputs "LOWER".
 //        If a user guesses the number, the game should declare "GOOD GUESS!"
+//        Keep track of how many guesses a user makes.
+//        Set an upper limit on the number of guesses.
 
 public class HighLow {
 
@@ -35,8 +37,6 @@ public class HighLow {
             }
             System.out.println("You have " + (10 - numOfGuesses) + " guesses left!");
         }
-
-
 
 
     }
