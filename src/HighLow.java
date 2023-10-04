@@ -12,19 +12,28 @@ public class HighLow {
     public static void main(String[] args) {
         Scanner myScanner = new Scanner(System.in);
 
-        System.out.println("Lets play a guessing game! Guess a number between 1 and 100: ");
+        System.out.println("Lets play a guessing game! Guess a number between 1 and 100, you have 10 guesses! ");
         int randomNum = (int) (Math.random() * 100 + 1); //returns an integer between 1 and 100
         System.out.println(randomNum);
         int userGuess = 0;
-        while (userGuess != randomNum) {
+        int numOfGuesses = 0;
+        while (userGuess != randomNum || numOfGuesses != 10) {
             userGuess = myScanner.nextInt();
+            numOfGuesses++;
+            if(numOfGuesses == 10) {
+                System.out.println("You ran out of guesses!");
+                break;
+            }
+
             if (userGuess < randomNum) {
                 System.out.println("HIGHER");
             } else if (userGuess > randomNum) {
                 System.out.println("LOWER");
             } else {
-                System.out.println("GOOD GUESS!");
+                System.out.printf("GOOD GUESS! You guessed the number in %d of guesses!", numOfGuesses);
+                break;
             }
+            System.out.println("You have " + (10 - numOfGuesses) + " guesses left!");
         }
 
 
