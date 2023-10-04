@@ -16,7 +16,7 @@ public class HighLow {
 
         System.out.println("Lets play a guessing game! Guess a number between 1 and 100, you have 10 guesses! ");
         int randomNum = (int) (Math.random() * 100 + 1); //returns an integer between 1 and 100
-        System.out.println(randomNum);
+
         int userGuess = 0;
         int numOfGuesses = 0;
         while (userGuess != randomNum || numOfGuesses != 10) {
@@ -35,7 +35,7 @@ public class HighLow {
                 System.out.printf("GOOD GUESS! You guessed the number in %d of guesses!", numOfGuesses);
                 break;
             }
-            System.out.println("You have " + (10 - numOfGuesses) + " guesses left!");
+            System.out.printf("You have %d guesses left!", 10-numOfGuesses);
         }
 
 
