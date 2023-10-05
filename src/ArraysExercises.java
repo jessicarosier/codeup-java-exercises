@@ -20,13 +20,17 @@ public class ArraysExercises {
     }
 
     public static Person[] addPerson(Person[] people, Person person) {
+        //created a copy of the original object with one additional null index
         Person[] peopleCopy = Arrays.copyOf(people, people.length + 1);
+        //give the last index in the array a value of the new person object
         peopleCopy[peopleCopy.length - 1] = person;
+        //trust but verify
         System.out.println(peopleCopy.length);
+        //loop through the new array and print out their names
         for (Person persons : peopleCopy) {
-
             System.out.println(persons.name);
         }
+        //return the new object that includes the additional person
         return peopleCopy;
     }
 

@@ -5,7 +5,7 @@
 public class ServerNameGenerator {
 
     String[] adjectives = {"tangy", "fancy", "excited", "yummy", "spooky", "nifty", "apathetic", "beautiful", "violent", "fuzzy"};
-    String[] nouns = {"environment", "army", "computer", "hospital", "news", "year", "meal", "mud", "owl", "horse"};
+    String[] nouns = {"bacon", "army", "avacado", "hospital", "bobcat", "panda", "daisy", "mud", "owl", "horse"};
 
     public String getRandomElement(String[] elements) {
 
