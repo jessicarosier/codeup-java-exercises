@@ -9,7 +9,6 @@ public class ServerNameGenerator {
 
     public String getRandomElement(String[] elements) {
 
-
         int randomNum = (int) (Math.random() * elements.length); //returns an integer between 1 and the length of the passed array
         return elements[randomNum];
     }

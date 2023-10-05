@@ -27,7 +27,7 @@ public class Movie {
     }
 
     public void getMoviesInfo() {
-        System.out.printf("Movie Name: %s, Category: %s\n", this.getName(), this.getCategory());
+        System.out.printf("%s -- %s\n", this.getName(), this.getCategory());
     }
 
     public void getDramaMovie() {
@@ -69,23 +69,15 @@ public class Movie {
         this.category = category;
     }
 
-//    public void setMovieInfo() {
-//        this.setName();
-//        this.setCategory();
-//    }
 
     public static Movie[] addMovie(Movie[] movies, Movie movie) {
         //created a copy of the original object with one additional null index
         Movie[] movieListCopy = Arrays.copyOf(movies, movies.length + 1);
         //give the last index in the array a value of the new movie object
         movieListCopy[movieListCopy.length - 1] = movie;
-        //trust but verify
-        System.out.println(movieListCopy.length);
-        //loop through the new array and print out their names
-        for (Movie film : movieListCopy) {
-            System.out.println(film.name);
-        }
-        //return the new object that includes the additional person
+        //soufs a confirmation message for the user
+        System.out.printf("The movie %s with a category of %s has been added!\n", movieListCopy[movieListCopy.length - 1].getName(), movieListCopy[movieListCopy.length - 1].getCategory());
+        //return the new object that includes the additional movie
         return movieListCopy;
     }
 

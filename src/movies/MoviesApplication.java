@@ -66,12 +66,13 @@ public class MoviesApplication {
                 }
             } else if (userChoice == 7) {
                 System.out.println("Enter a Movie name:\n");
+                //saves the user input into a variable
                 String userMovie = newScanner.nextLine();
                 System.out.println("Enter a category:\n");
+                //saves the user input into a variable
                 String userCategory = newScanner.nextLine();
-
+                //passes the array of movies and a new movie object created using the user input into the addMovie method.
                 Movie.addMovie(movieList, new Movie(userMovie, userCategory));
-
             }
         } while (userContinue);
 
