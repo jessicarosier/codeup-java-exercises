@@ -10,14 +10,14 @@ public class MoviesApplication {
 
         Movie[] movieList = Arrays.copyOf(MoviesArray.findAll(), MoviesArray.findAll().length);
 //        System.out.println(movieList[0].getName());
-//        for(Movie movies : movieList) {
-//            System.out.printf("Movie Name: %s, Category: %s\n", movies.getName(), movies.getCategory());
-//        }
+//
+        for(Movie movies : movieList) {
+            System.out.printf("Movie Name: %s, Category: %s\n", movies.getName(), movies.getCategory());
+        }
 //
 //        for(Movie movies : movieList) {
 //            movies.getScifiMovie();
 //        }
-
         Boolean userContinue = true;
 
         do {
