@@ -21,7 +21,6 @@ public class Input {
     public String getString(String prompt) {
         System.out.println(prompt);
         String newString = scanner.nextLine();
-        System.out.println(newString);
         return newString;
 
     }
@@ -39,13 +38,10 @@ public class Input {
 
     public boolean yesNo(String prompt) {
         System.out.println(prompt);
-        scanner.nextLine();
         String newBool = scanner.nextLine();
         if (newBool.equalsIgnoreCase("y")||newBool.equalsIgnoreCase("yes")) {
-            System.out.println(true);
             return true;
         } else {
-            System.out.println(false);
             return false;
         }
     }
