@@ -48,7 +48,6 @@ public class Student {
         } else {
             System.out.println("Invalid Input");
         }
-
     }
 
 //Create an instance method on your Student class to calculate a student's attendance percentage -- (Total Days - Absences) / Total Days.
@@ -66,6 +65,7 @@ public double calculateAttendance() {
             daysAbsent++;
         }
     }
+
 //    System.out.println(daysAbsent);
 //    System.out.println(3/5);
     //HAVE TO CAST THIS OTHERWISE WILL RETURN 0 AHHHHHHHHHH !*%##!
@@ -83,17 +83,17 @@ public void getStudentReport() {
 //prints out a list of dates that the student was absent
 public void getAbsenceList() {
         //buckets to separate the keys and values
-    ArrayList<String> dates = new ArrayList<>();
+    ArrayList<String> datesAbsent = new ArrayList<>();
     ArrayList<String> status = new ArrayList<>();
 
-    //adds the keys and values to the buckets
-    dates.addAll(attendance.keySet());
+    datesAbsent.addAll(attendance.keySet());
     status.addAll(attendance.values());
 
-    //loops through the status bucket and prints the dates at the same index that have an "A" value
-    for (int i = 0; i < dates.size(); i++) {
-        if(status.get(i).equals("A")) {
-            System.out.println(dates.get(i));
+    for (int i = 0; i < datesAbsent.size(); i++) {
+        if (status.get(i) == "A") {
+            System.out.printf("%s - %s\n", datesAbsent.get(i), status.get(i));
+    }
+
         }
     }
 }
@@ -105,4 +105,4 @@ public void getAbsenceList() {
 
 
 
-}
+

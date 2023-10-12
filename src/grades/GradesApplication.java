@@ -52,6 +52,7 @@ public class GradesApplication {
         ArrayList<String> usernames = new ArrayList<>();
         usernames.addAll(students.keySet());
 
+
         //adds the student objects into an ArrayList named allStudents
         ArrayList<Student> allStudents = new ArrayList<>();
         students.values().forEach(student -> allStudents.add(student));
