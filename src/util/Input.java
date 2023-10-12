@@ -14,12 +14,13 @@ public class Input {
 
     public String getString() {
         String newString = scanner.nextLine();
-        System.out.println(newString);
         return newString;
     }
 
     public String getString(String prompt) {
+
         System.out.println(prompt);
+        scanner.nextLine();
         String newString = scanner.nextLine();
         return newString;
 
@@ -28,16 +29,15 @@ public class Input {
     public boolean yesNo() {
         String newBool = scanner.nextLine();
         if (newBool.equalsIgnoreCase("y")||newBool.equalsIgnoreCase("yes")) {
-            System.out.println(true);
             return true;
         } else {
-            System.out.println(false);
             return false;
         }
     }
 
     public boolean yesNo(String prompt) {
         System.out.println(prompt);
+
         String newBool = scanner.nextLine();
         if (newBool.equalsIgnoreCase("y")||newBool.equalsIgnoreCase("yes")) {
             return true;
@@ -68,8 +68,9 @@ public class Input {
 
     public int getInt(String prompt) {
         System.out.println(prompt);
+        scanner.nextLine();
         int userNum = scanner.nextInt();
-        System.out.println(userNum);
+        System.out.println();
         return userNum;
     }
 
