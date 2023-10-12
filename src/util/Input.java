@@ -37,7 +37,7 @@ public class Input {
 
     public boolean yesNo(String prompt) {
         System.out.println(prompt);
-
+//       scanner.nextLine();
         String newBool = scanner.nextLine();
         if (newBool.equalsIgnoreCase("y")||newBool.equalsIgnoreCase("yes")) {
             return true;
@@ -68,7 +68,7 @@ public class Input {
 
     public int getInt(String prompt) {
         System.out.println(prompt);
-        scanner.nextLine();
+//        scanner.nextLine();
         int userNum = scanner.nextInt();
         System.out.println();
         return userNum;
@@ -99,6 +99,9 @@ public class Input {
         return userNum;
     }
 
+    public void nextLine() {
+        scanner.nextLine();
+    }
 
 
 
